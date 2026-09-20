@@ -13,3 +13,4 @@ SELECT
     bank_transaction_status
 FROM bank_transaction
 ORDER BY bank_transaction_id;
+

@@ -1,0 +1,3 @@
+-- Customer table
+-- Add the exact CREATE TABLE statement from the existing Oracle project here
+-- once the current database DDL is confirmed.

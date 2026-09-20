@@ -1,0 +1,9 @@
+# Oracle / editor / OS files
+*.log
+*.tmp
+*.dmp
+*.trc
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
