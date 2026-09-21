@@ -1,2 +1,24 @@
 # Performance Tests
-Performance test scripts and observations will be stored here.
+
+## Scenario 01 - High-Value Successful Transactions
+
+### Query
+
+The performance test uses the existing AML Scenario 01 query:
+
+```sql
+SELECT
+    BANK_TRANSACTION_ID,
+    ACCOUNT_ID,
+    BANK_TRANSACTION_DATE,
+    BANK_TRANSACTION_TYPE,
+    AMOUNT,
+    CURRENCY,
+    COUNTRY,
+    CHANNEL,
+    REFERENCE_NUMBER,
+    BANK_TRANSACTION_STATUS
+FROM BANK_TRANSACTION
+WHERE AMOUNT >= 1000000
+  AND BANK_TRANSACTION_STATUS = 'SUCCESS'
+ORDER BY AMOUNT DESC;
